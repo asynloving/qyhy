@@ -3,76 +3,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <!-- ZFC -->
-    <script type="text/javascript">
-        var nwTest = true;
-        var bmv = {};
-        var m2aux = { styles: [1183955, 1301064, 1304861, 1306336, 1312504, 1315626, 1317387, 1324249, 1329581, 1335806, 1347021, 1360623, 1402631, 1402860, 1418544, 1431758, 1433454, 1448696, 1452878, 1454087, 1454995, 1455361, 1458943, 1458960, 1460341, 1460816, 1462555, 1462640, 1463589, 1464892, 1465200, 1465322, 1465324, 1465558, 1465625, 1465628, 1465701, 1465877, 1466134, 1466742, 1466747, 1466752, 1467076, 1468658, 1468777, 1469129, 1470124, 1470265, 1470276, 1470669, 1470836, 1471482, 1471483, 1474402, 1474441, 1474575, 1474581, 1475445, 1475477, 1475482, 1476355, 1477682, 1478244,
-1478447, 1478465, 1479187, 1479379, 1480212, 1480619, 1480643, 1480660, 1481266, 1485842, 1488171, 1490908, 1491308, 1491483, 1493958, 1494994, 1495073, 1495078, 1496191, 1496194, 1496274, 1496278, 1496314, 1496315, 1496634, 1498837, 1498970, 1498971, 1499256, 1503402, 1504100, 1504101, 1505786, 1506084, 1506372, 1506376, 1506379, 1506771, 1506807, 1507834, 1507853, 1507854, 1509493, 1509495, 1509803, 1509952, 1514586, 1514590, 1514837, 1514884, 1515373, 1519570, 1521496, 1525450, 1526464, 1531218, 1532163, 1533460, 1536501, 1536502, 1540673, 1541660, 1541663,
-1542286, 1554175, 1554179, 1554184, 1554188, 1556268, 1556270, 1556608, 1558004, 1565058, 1565831, 1566661, 1570386, 1572886, 1573500, 1573663, 1573667, 1573678, 1573762, 1573763, 1574114, 1577949, 1578161, 1578898, 1578902, 1579108, 1579540, 1579960, 1580616, 1580618, 1580654, 1582089, 1582090, 1582169, 1582349, 1585049, 1589371, 1590294, 1590955, 1591012, 1593425, 1593652, 1595449, 1595701, 1596385, 1596427, 1596902, 1598460, 1598468, 1599340, 1599364, 1599765, 1601237, 1602094, 1603974, 1604084, 1604105, 1604670, 1608668, 1609102, 1610024, 1610531, 1610545,
-1610888, 1611125, 1611791, 1612026, 1612129, 1612438, 1612590, 1615010, 1615814, 1615816, 1617235, 1618192, 1619762, 1619776, 1619877, 1619901, 1620506, 1621007, 1621596, 1621604, 1621626, 1621719, 1622245, 1622907, 1622917, 1625751, 1627553, 1627608, 1627749, 1627750, 1628408, 1630240, 1630375, 1630586, 1630624, 1630686, 1632475, 1632483, 1632490, 1632534, 1633848, 1633856, 1634126, 1634741, 1638049, 1638216, 1638344, 1638397, 1638423, 1638465, 1638492, 1638556, 1642232, 1645289, 1645353, 1645355, 1645488, 1645806, 1645819, 1649401, 1651578, 1651600, 1652364,
-1652436, 1652518, 1652593, 1653500, 1653920, 1653996, 1654009, 1654800, 1654808, 1654885, 1655008, 1655204, 1660351, 1660475, 1666773, 1667387, 1668298, 1668361, 1668836, 1669223, 1671353, 1676053, 1676055, 1676094, 1677353, 1677531, 1679559, 1679765, 1679790, 1681170, 1689695, 1689835, 1691784, 1691788, 1692114, 1696457, 1696789, 1702548, 1702605, 1704271, 1704272, 1709528, 1709610, 1711248, 1713550, 1714824, 1719904, 1721101, 1721173, 1721273, 1721441, 1721466, 1721512, 1721545, 1721753, 1721868, 1721903, 1721998, 1722011, 1722664, 1723353, 1724554, 1725539,
-1728066, 1728364, 1728653, 1728755, 1728868, 1729326, 1738098, 1740360, 1741936, 1742268, 1744813, 1745084, 1747376, 1747389, 1747393, 1747410, 1747412, 1747427, 1747430, 1747431, 1747432, 1747439, 1747444, 1760227, 1760516, 1765829, 1765833, 1765835, 1765845, 1765854, 1766125, 1767334, 1769292, 1769713, 1769715, 1769725, 1777304, 1779812, 1780770, 1781533, 1781534, 1781535, 1781810, 1781812, 1783016, 1783030, 1783776, 1783798, 1783799, 1783800, 1784479, 1784639, 1789343, 1789432, 1789698, 1789708, 1789710, 1790739, 1793526, 1794683, 1803373, 1805972],
-            contains: function (f, g) { var a, c = 0, h = f.length; g = parseInt(g); do { a = Math.floor(c + (h - c) / 2); if (g == f[a]) return true; if (g > f[a]) c = a + 1; else h = a } while (c < h); return false; }, intersect: function (f, g) { for (var a = [], c = 0, h = g.length; c < h; c++) m2aux.contains(f, g[c]) && a.push(g[c]); return a; } 
-        };
-        function m2setup(f) {
-            return function () {
-                var a = document, c = m2aux.contains, h = m2aux.styles; beforeLAB = function () { var b, i, d, j, e, k; if (typeof imageHash === "object") { if (c(h, styleId)) { b = imageHash[styleId]; for (i in b) { d = b[i]; for (j in d) if (f == "flat" && j != "p" && j != "1") delete d[j]; else { e = d[j]; for (k in e) if (typeof e[k] === "string") e[k] = e[k].replace(".jpg", "-" + f + ".jpg") } } a.write("<style>#image img{visibility:hidden}</style>") } } else { a.write("<style>body #detailImage{visibility:hidden}</style>") } }; afterEverything =
-function () {
-    if (typeof imageHash === "object") { if (c(h, styleId)) { var b = a.getElementById("image").children[0].children[0]; if (b.tagName === "P") b = b.children[0]; b.onload = function () { document.body.className += " imageloaded" }; b.src = b.src.replace(/\.jpg$/, "-" + f + ".jpg"); a.write("<style>.imageloaded #image img{visibility:visible}</style>") } } else if (typeof (colorIds) != 'undefined') {
-        b = []; var i; for (i in colorIds) b.push(i); var d = a.getElementById("detailImage"); if ((i = d.src.match(/\/(\w+)-/)) && c(h, i[1])) {
-            d.onload = function () {
-                document.body.className +=
-" imageloaded"
-            }; d.src = d.src.replace(/\.jpg$/, "-" + f + ".jpg")
-        } else document.body.className += " imageloaded"; a.write("<style>.imageloaded #detailImage{visibility:visible}</style>"); b = m2aux.intersect(h, b); d = a.getElementById("detailImages").children; for (var j = a.getElementById("thumbnailImages").children, e = 0, k = d.length; e < k; e++) if ((i = d[e].src.match(/\/(\w+)-/)) && c(b, i[1])) { d[e].src = d[e].src.replace(/\.jpg$/, "-" + f + ".jpg"); j[e].src = j[e].src.replace(/\.jpg$/, "-" + f + ".jpg") } 
-    } 
-} 
-            };
-        };
-    </script>
-    <script type="text/javascript">
-        var zfcUUID = function () { var a = function () { return ((1 + Math.random()) * 65536 | 0).toString(16).substring(1) }; return a() + a() + "-" + a() + "-" + a() + "-" + a() + "-" + a() + a() + a() } ();
-        var zfcUPU = '/';
-        var zfcAHW = [{ h: 'a1.zassets.com', r: 6 }, { h: 'a2.zassets.com', r: 6}];
-        var hydraTests = [
-    { name: 'm', phase: 2, url: /./, variants: [{ chance: 0, redirect: 'domain', domain: 'iphone.zappos.com' }, { chance: 1, redirect: 'domain', domain: 'm.zappos.com'}] }
-  ];
-        var zfc = [];
-        zfc.push(['initialize', '1329118151388', (new Date).getTime(), 'zeta_http', 'iphone.zappos.com', zfcUPU, '6c491074-5614-11e1-8206-00215e22da70', zfcUUID]);
-        zfc.push(['setEventUrl', '/event.cgi']);
-        window.onerror = function (msg, url, line) {
-            zfc.push(['addError', msg, url, line]);
-            return true;
-        };
-        (function () {
-            var zsc = document.createElement('script');
-            zsc.type = 'text/javascript';
-            zsc.async = true;
-            zsc.src = 'zfc-async.20110809.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(zsc);
-        })();
-    </script>
-    <script type="text/javascript">
-        (function (c, g, e) { for (var b = document, a = window.zfcUPU || b.location.toString(), f = function () { window.hydra.execTests(c, g) }, d = 0, h = c.length; d < h; d++) if (a.match(new RegExp(c[d].url))) { b.write('<scr' + 'ipt src="' + e + '" id="hydra_js" type="text/javascript"><\/scr' + 'ipt>'); window.hydraOnload = f; return } a = b.createElement("script"); a.type = "text/javascript"; a.async = true; a.onload = f; a.src = e; (b.getElementsByTagName("head")[0] || b.getElementsByTagName("body")[0]).appendChild(a) })(hydraTests, ".zappos.com", "hydra.p.20110714.js");
-    </script>
-    <script type="text/javascript">
-        if (window.hydraOnload) {
-            window.hydraOnload();
-        }
-    </script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>M.Zappos.com</title>
-    <meta name="description" content="Zeta is the new Zappos!" />
-    <meta name="keywords" content="Zappos, Shoes" />
     <meta http-equiv="imagetoolbar" content="no" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="stylesheet" href="iphone.20120203103702.css" type="text/css" media="screen" />
-    <script type="text/javascript">
-        var z = {};
-        z.readCookie = function z_readCookie(c) { c = c + "="; for (var d = document.cookie.split(";"), b = 0; b < d.length; b++) { for (var a = d[b]; a.charAt(0) == " "; ) a = a.substring(1, a.length); if (a.indexOf(c) == 0) return a.substring(c.length, a.length) } return null }; z.writeCookie = function z_writeCookie(c, d, b, a) { if (b) { var e = new Date; e.setTime(e.getTime() + b * 24 * 60 * 60 * 1000); b = "; expires=" + e.toGMTString() } else b = ""; document.cookie = c + "=" + d + b + "; path=/" + (a && a != "" ? "; domain=" + a : "") };
-        (function () { if (navigator.userAgent.match(/iPhone/i) && !z.readCookie("seenapp")) { var a = location.host.replace(/(?:www|zeta)/, "iphone"); window.location = "http://" + a + "/app.html?redirectTo=" + window.location.toString(); throw "ok"; } })();
-    </script>
     <link rel="canonical" href="/" />
     <style type="text/css" media="screen">
         a.zph:link
@@ -160,90 +95,12 @@ function () {
             </p>
         </div>
     </div>
-    <script src="iphone.20120203103702.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(
-    ['pageTrackerPriTr._setAccount', 'UA-8814898-17'],
-    ['pageTrackerPriTr._setDomainName', '.zappos.com'],
-    ['pageTrackerPriTr._setAllowHash', false]
-  );
-
-        /*[start ga]*/
-        _gaq.push(['pageTrackerPriTr._trackPageview']);
-        /*[end ga]*/
-
-        (function () {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
-        })();
-    </script>
-    <script type="text/javascript">
-        (function (w) {
-            var old = w.onload,
-          pixels = [];
-
-            w.onload = function () {
-                if (typeof old === 'function') {
-                    old();
-                }
-
-                setTimeout(loadPixels, 50);
-            }
-
-            function loadPixels() {
-                for (var i = 0, len = pixels.length; i < len; i++) {
-                    var pixelHTML = pixels.join(' ');
-                    document.getElementById('pixels').innerHTML = pixelHTML;
-                }
-            }
-
-            w.pushPixel = function (str) {
-                pixels.push(str);
-            }
-        } (window));
-    </script>
     <div id="pixels">
     </div>
-    <script type="text/javascript">
-        if (!window.hideCriteoPixel) {
-            var CRITEO = function () { var b = { Load: function (d) { var c = window.onload; window.onload = function () { if (c) { c() } d() } } }; function a(e) { if (document.createElement) { var c = document.createElement("IFRAME"); if (c) { c.width = "1px"; c.height = "1px"; c.style.display = "none"; c.src = e; var d = document.getElementById("cto_mg_div"); if (d != null && d.appendChild) { d.appendChild(c) } } } } return { Load: function (c) { document.write("<div id='cto_mg_div' style='display:none;'></div>"); b.Load(function () { a(c) }) } } } ();
-            CRITEO.Load("http://dis.us.criteo.com/dis/dis.aspx?p1=" + escape("v=2&wi=7710907&pt1=0&pt2=1") + "&t1=sendEvent&p=1731&c=2&cb=" + Math.floor(Math.random() * 99999999999));
-        }
-    </script>
-    <script type="text/javascript">
-    (function () {
-      var pp = window.pushPixel;
-
-      pp('<img width="1" height="1" src="http://action.media6degrees.com/orbserv/hbpix?pixId=3168" />');
-      
-      pp('<img src="http://int.teracent.net/tase/int?adv=247&fmt=redir&sec=0&pid=prod&cat=Homepage" width="1" height="1" />');
-
-        pp('<img src="http://leadback.advertising.com/adcedge/lb?site=695501&srvc=1&betr=zapps_cs=1&betq=11406=421770" width="0" height="0" border="0" />');
-      
-        pp('<img src="http://secure.quantserve.com/pixel?a.1=p-3cMVFplcgisvc&a.2=p-eengoTdtIw2aQ&labels=_fp.channel.home+page,_fp.event.zappos+home+page,_fp.subchannel.lead,_fp.pcat.retail,_fp.version.zappos+home" border="0" height="0" width="0" />');
-      
-        <!-- Creation Date:10/20/09 -->
-        pp('<img src="http://ad.doubleclick.net/activity;src=2516896;type=zappo728;cat=homep407;ord=1;num=1?" width="1" height="1" />');
-      
-        pp('<img src="http://www.imiclk.com/cgi/r.cgi?m=3&mid=eHty6nWk&ptid=HOME&sp=1" width="1" height="1" border="0">');
-      
-        pp('<img src="http://ads.bluelithium.com/pixel?id=687976&t=2" width="1" height="1" />');
-      
-        pp('<img height="1" width="1" src="http://view.atdmt.com/action/apmzpo_ZapposHomepage_1"/>');
-      
-        pp('<img src="http://media.fastclick.net/w/tre?ad_id=22145;evt=14662;cat1=17119;cat2=17120" width="1" height="1" border="0">');
-    }());
-    </script>
     <link rel="alternate" type="application/rss+xml" title="Zappos Product Feed" href="feed://www.zappos.com/rss/search/null/filter/hide:isNew/%22true%22/sort/goLiveDate/desc" />
     <img width="1" height="1" src="http://action.media6degrees.com/orbserv/hbpix?pixId=3168" />
     <img src="http://int.teracent.net/tase/int?adv=247&fmt=redir&sec=0&pid=prod&cat=Homepage"
         width="1" height="1" />
-    <script type="text/javascript">
-        var CRITEO = function () { var b = { Load: function (d) { var c = window.onload; window.onload = function () { if (c) { c() } d() } } }; function a(e) { if (document.createElement) { var c = document.createElement("IFRAME"); if (c) { c.width = "1px"; c.height = "1px"; c.style.display = "none"; c.src = e; var d = document.getElementById("cto_mg_div"); if (d != null && d.appendChild) { d.appendChild(c) } } } } return { Load: function (c) { document.write("<div id='cto_mg_div' style='display:none;'></div>"); b.Load(function () { a(c) }) } } } ();
-        CRITEO.Load("http://dis.us.criteo.com/dis/dis.aspx?p1=" + escape("v=2&wi=7710907&pt1=0&pt2=1") + "&t1=sendEvent&p=1731&c=2&cb=" + Math.floor(Math.random() * 99999999999));
-    </script>
     <img src="http://leadback.advertising.com/adcedge/lb?site=695501&srvc=1&betr=zapps_cs=1&betq=11406=421770"
         width="0" height="0" border="0" />
     <img src="http://r.turn.com/r/beacon?b2=2ZYroRq-GSvSTVKZgdqD24YuT0ohc1gcHkRn61hL4Qo2-WLBbRfUP0l4gGFxkxpHxvQGqEybaG4bJt1DJcP33g&cid="
