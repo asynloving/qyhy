@@ -48,10 +48,10 @@ strong {font-weight:bold;}
 .note {font-size:14px;}
 
 h1.logo {height:25px; margin:0; padding:5px;}
-h1.logo a {display:block; height:25px; text-indent:-1000em; background:url(/imgs/zaplogo_small.20120203103702.gif) no-repeat center;}
+h1.logo a {display:block; height:25px; text-indent:-1000em; background:url(zaplogo_small.20120203103702.gif) no-repeat center;}
 
 .homepage h1 {height:40px;}
-.homepage h1 a {height:40px; background:url(/imgs/zaplogo_main.20120203103702.gif) no-repeat center;}
+.homepage h1 a {height:40px; background:url(zaplogo_main.20120203103702.gif) no-repeat center;}
 
 #global-search {position:relative; margin:0 5px 5px; padding:2px 0; text-align:center; background-color:#e1d3bf; background:-webkit-gradient(linear, left top, left bottom, from(#f0e9de), to(#e1d3bf)); border:1px solid #ddd; -webkit-border-radius:5px;}
 #global-search label {display:none;}
